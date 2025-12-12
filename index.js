@@ -153,13 +153,13 @@ function playerNumbers(teamName) {
     const numbers = [];
     if (game.home.teamName === teamName) {
         for (let playerName in game.home.players) {
-            numbers.push(game.home.players[player].number);
+            numbers.push(game.home.players[playerName].number);
         }
         return numbers;
     }
     if (game.away.teamName === teamName) {
-        for (let player in game.away.players) {
-            numbers.push(game.away.players[player].number);
+        for (let playerName in game.away.players) {
+            numbers.push(game.away.players[playerName].number);
         }
         return numbers;
     }
